@@ -1,0 +1,107 @@
+#chat-screen {
+    background-image: url("../Image/chatscreen.jpg");
+    background-repeat: no-repeat;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#messages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 500px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login-screen {
+    background-image: url("../Image/loginscreen.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.login {
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    padding: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.login span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+}
+
+.login span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 1s;
+}
+
+.login:hover span {
+    padding-right: 25px;
+}
+
+.login:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.icon {
+    width: 80px;
+    height: 70px;
+    display: block;
+}
+
+.chat-logo {
+    margin-bottom: 400px;
+}
+
+.input-container {
+    display: inline;
+}
+
+input:hover {
+    background-color: #00dffc;
+}
+
+.user-name{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.chat {
+  height: 90px; }
